@@ -1,0 +1,7 @@
+.header_tab
+ .nav-link{
+    border:none;
+    &:active, &:visited{
+        border-bottom: 0.171px solid $text-primary !important;
+    }
+}
