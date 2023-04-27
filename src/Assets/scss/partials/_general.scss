@@ -1,0 +1,4 @@
+// Common Classes For The Whole Website
+.btn-common{
+    @include button();
+}
