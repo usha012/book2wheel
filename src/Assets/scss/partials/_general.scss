@@ -2,3 +2,80 @@
 .btn-common{
     @include button();
 }
+
+// image_sizes
+.pr-20{
+    @include image_wrapper()
+}
+.pr-30{
+    @include image_wrapper(30px, 30px)
+}
+
+// cstm-round-pill
+.cstm-round-pill{
+    background-color:$bg-bluegray-100;
+    color:$text-dark-blue-400;
+}
+// text-decoration
+.s{
+    text-decoration: line-through !important;
+}
+
+// line-height
+
+.line_height_10{
+    line-height: 10px;
+}
+.line_height_12{
+    line-height: 12px;
+}
+.line_height_13{
+    line-height: 13px;
+}
+.line_height_14{
+    line-height: 14px;
+}
+.line_height_15{
+    line-height: 15px;
+}
+.line_height_16{
+    line-height: 16px;
+}
+.line_height_17{
+    line-height: 17px;
+}
+.line_height_18{
+    line-height: 18px;
+}
+.line_height_19{
+    line-height: 19px;
+}
+.line_height_20{
+    line-height: 20px;
+}
+.line_height_21{
+    line-height: 21px;
+}
+.line_height_22{
+    line-height: 22px;
+}
+.line_height_23{
+    line-height: 23px;
+}
+.line_height_25{
+    line-height: 25px;
+}
+.line_height_25{
+    line-height: 25px;
+}
+.line_height_26{
+    line-height: 26px;
+}
+
+// boders
+.border-end-gray-100{
+    border-right: 0.071rem solid $bg-gray-100;
+}
+.border-end-dark-blue-400{
+      border-right: 0.071rem solid $bg-dark-blue-400;
+}

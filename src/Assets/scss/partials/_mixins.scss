@@ -16,3 +16,13 @@
         box-shadow:none;
     }
 }
+
+@mixin image_wrapper ($w_size:20px, $h_size:20px, $object_size:cover){
+    width: $w_size;
+    height: $h_size;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: $object_size;
+    }
+}
