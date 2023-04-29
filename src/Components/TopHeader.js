@@ -58,8 +58,8 @@ const TopHeader = () => {
 
                 </div>
             </div>
-            <div className='row searchbar_wrapper justify-content-center justify-content-md-between align-items-center mx-0 mx-md-5'>
-                <div className='col-md-auto'>
+            <div className='row searchbar_wrapper justify-content-lg-center justify-content-md-between align-items-center mx-0 mx-md-5'>
+                <div className='col-md-auto d-block d-lg-none'>
                     <img src={Cycle} />
 
                 </div>
@@ -77,7 +77,7 @@ const TopHeader = () => {
                         </div>
                         <div className='col-lg-3 col-3 text-center fs_20 fw_600'>
                             <p className='mb-0 d-none d-lg-block'>Return Date</p>
-                            <p className='mb-0 '>Return Date</p>
+                            <p className='mb-0 d-lg-none'>Return Date</p>
 
                         </div>
                         <div className='col-lg- col-auto text-end pe-0'>
@@ -94,7 +94,7 @@ const TopHeader = () => {
 
                     </div>
                 </div>
-                <div className='col-md-2'>
+                <div className='col-md-2 d-lg-none'>
                     <div className='pill_container d-flex align-items-center justify-content-center'>
                         <div className='pr-30 me-3'>
                             <img src={User} />

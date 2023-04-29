@@ -5,7 +5,12 @@
 
 // image_sizes
 .pr-20{
-    @include image_wrapper()
+    @include image_wrapper();
+  
+}
+.pr-20-contain{
+    @include image_wrapper(40px, 40px, contain);
+  
 }
 .pr-30{
     @include image_wrapper(30px, 30px)
