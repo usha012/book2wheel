@@ -16,60 +16,60 @@ const responsive = {
     0:{items:4},
     1000:{items:6}
 }
-const navText = [`<img class='category_icon' src=${PreviousArrow}/>`, `<img class='category_icon' src=${NextArrow}/>`]
+const navText = [`<img class='category_icon d-lg-none' src=${PreviousArrow}/>`, `<img class='category_icon' src=${NextArrow}/>`]
 
 export const CategoryFillters = () => {
   return (
-    <div className='row mx-0 mb-4 justify-content-center align-items-center'>
+    <div className='row mx-5 mb-4 justify-content-center align-items-center'>
 
-        <div className='col-lg-9 col-md-11 mt-4'>
-            <OwlCarousel className='owl-theme category_carousel position-relative' loop margin={10} nav={true} navText={navText} dots={false} responsive={responsive} >
+        <div className='col-lg-9 col-md-10 mt-4'>
+            <OwlCarousel className='owl-theme category_carousel position-relative px-5' loop margin={10} nav={true} navText={navText} dots={false} responsive={responsive} >
                 <div class='item'>
                     <div className='text-center'>
-                        <div className="pr-20-contain mx-auto">
+                        <div className="pr-20-contain pr-20-md-contain mx-auto">
                             <img className="" src={SuperIcon}/>
                         </div>
-                        <p className='mb-0 fs_18 fw_400'>Super Owner</p>
+                        <p className='mb-0 fs_16 fs_xl_18  fw_400'>Super Owner</p>
                     </div>
                 </div>
                 <div class='item'>
                     <div className='text-center'>
-                        <div className="pr-20-contain mx-auto">
+                        <div className="pr-20-contain pr-20-md-contain mx-auto">
                             <img className="" src={Booking}/>
                         </div>
-                        <p className='mb-0 fs_18 fw_400'>Instant Booking</p>
+                        <p className='mb-0 fs_16 fs_xl_18 fw_400'>Instant Booking</p>
                     </div>
                 </div>
                 <div class='item'>
                     <div className='text-center'>
-                        <div className="pr-20-contain mx-auto">
+                        <div className="pr-20-contain pr-20-md-contain mx-auto">
                             <img className="" src={Location}/>
                         </div>
-                        <p className='mb-0 fs_18 fw_400'>Delivery</p>
+                        <p className='mb-0 fs_16 fs_xl_18 fw_400'>Delivery</p>
                     </div>
                 </div>
                 <div class='item'>
                     <div className='text-center'>
-                        <div className="pr-20-contain mx-auto">
+                        <div className="pr-20-contain pr-20-md-contain mx-auto">
                             <img className="" src={Vehicle}/>
                         </div>
-                        <p className='mb-0 fs_18 fw_400'>Vehicle Type</p>
+                        <p className='mb-0 fs_16 fs_xl_18 fw_400'>Vehicle Type</p>
                     </div>
                 </div>
                 <div class='item'>
                     <div className='text-center'>
-                        <div className="pr-20-contain mx-auto">
+                        <div className="pr-20-contain pr-20-md-contain mx-auto">
                             <img className="" src={Transmission}/>
                         </div>
-                        <p className='mb-0 fs_18 fw_400'>Transmission</p>
+                        <p className='mb-0 fs_16 fs_xl_18 fw_400'>Transmission</p>
                     </div>
                 </div>
                 <div class='item'>
                     <div className='text-center'>
-                        <div className="pr-20-contain mx-auto">
+                        <div className="pr-20-contain pr-20-md-contain mx-auto">
                             <img className="" src={Fuel}/>
                         </div>
-                        <p className='mb-0 fs_18 fw_400'>Fuel Type</p>
+                        <p className='mb-0 fs_16 fs_xl_18 fw_400'>Fuel Type</p>
                     </div>
                 </div>
             </OwlCarousel>

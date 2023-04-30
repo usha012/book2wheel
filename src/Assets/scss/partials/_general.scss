@@ -12,6 +12,11 @@
     @include image_wrapper(40px, 40px, contain);
   
 }
+.pr-20-md-contain{
+    @media (max-width:769px) {
+        @include image_wrapper(20px, 20px, contain);  
+    }
+}
 .pr-30{
     @include image_wrapper(30px, 30px)
 }

@@ -29,11 +29,23 @@
 .fs_18{
     font-size: 1.286rem;
 }
+.fs_xl_18{
+    @media (max-width:1330px) {
+        font-size: 0.8rem;
+        
+    }
+}
 .fs_19{
     font-size:1.357rem;
 }
 .fs_20{
     font-size: 1.429rem;
+}
+.fs_xl_20{
+    @media (max-width:1450px) {
+        font-size: 1rem;
+        
+    }
 }
 .fs_21{
     font-size: 1.5rem;
