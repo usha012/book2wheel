@@ -4,23 +4,54 @@
 }
 
 // image_sizes
+.pr-15-contain{
+    @include image_wrapper(15px, 15px, contain);
+}
 .pr-20{
     @include image_wrapper();
   
 }
 .pr-20-contain{
+    @include image_wrapper(20px, 20px, contain);
+  
+}
+.pr-20-lg-contain{
+    @media (max-width:1400px) {
+        @include image_wrapper(15px, 15px, contain);
+    }
+    
+  
+}
+.pr-40-contain{
     @include image_wrapper(40px, 40px, contain);
   
 }
-.pr-20-md-contain{
+.pr-40-md-contain{
     @media (max-width:769px) {
         @include image_wrapper(20px, 20px, contain);  
     }
 }
 .pr-30{
-    @include image_wrapper(30px, 30px)
+    @include image_wrapper(30px, 30px, cover)
 }
-
+.pr-30-md{
+    @media(max-width:991px){
+    @include image_wrapper(20px, 20px, cover)
+    }
+}
+.pr-30-contain{
+    @include image_wrapper(30px, 30px, contain)
+}
+.pr-30-md-contain{
+    @media(max-width:991px){
+    @include image_wrapper(20px, 20px, contain)
+    }
+}
+.pr-30-sm-contain{
+    @media(max-width:767px){
+    @include image_wrapper(15px, 15px, contain)
+    }
+}
 // cstm-round-pill
 .cstm-round-pill{
     background-color:$bg-bluegray-100;

@@ -11,6 +11,11 @@
 .fs_12{
     font-size: 0.857rem;
 }
+.fs_12_xsm{
+    @media (max-width:374px) {
+        font-size: 0.786rem;
+    }
+}
 .fs_13{
     font-size: 0.929rem;
 }
@@ -58,6 +63,11 @@
 }
 .fs_24{
     font-size: 1.714rem;
+}
+.fs_24_lg{
+    @media(max-width:1200px){
+        font-size:1.357rem;
+    }    
 }
 .fs_25{
     font-size: 1.786rem;

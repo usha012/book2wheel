@@ -1,5 +1,9 @@
 .header{
     border-bottom: 0.143rem solid lighten($bg-gray-300, 30%);
+    @media (max-width:766px) {
+        border-bottom: none;
+        
+    }
 }
 .top_header_wrapper{
   margin-left: 10rem;
@@ -8,10 +12,10 @@
     margin-left: 3rem;
     margin-right: 3rem;
   }
-  @media(max-width:1200px) {
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
+//   @media(max-width:1200px) {
+//     margin-left: 0rem;
+//     margin-right: 0rem;
+//   }
 }
 .header_tab{
     border-bottom: 0px;
@@ -39,14 +43,42 @@
         width: fit-content;
         padding: 1rem 1.5rem;
     }
+    @media (max-width:1400px) {
+        padding: 0.8rem 1rem;
+    }
+    @media (max-width:1200px) {
+        padding: 0.6rem 0.8rem;
+    }
 }
-.bars_icon{
+.pill_gray{
+    padding: 0.4rem 1.8rem;
     width: fit-content;
+    border-radius: 3.214rem;
+    background-color:$bg-white;
+    border: 0.5px solid lighten($bg-gray-300, 40%);
+    color: $text-gray-400;
+}
+.pill_lg_gray{
+    padding: 2rem 3.8rem;
+    width: fit-content;
+    border-radius: 3.214rem;
+    background-color:$bg-white;
+    border: 0.5px solid lighten($bg-gray-300, 40%);
+    color: $text-gray-800;
+    &--container{
+        @extend .pill_lg_gray;
+        width:auto;
+        padding: 1.5rem 2.8rem;
+    }
+}
+
+.bars_icon{
+    width: 20px;
     height: 20px;
     img{
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 .logo_wrapper{
@@ -55,7 +87,15 @@
     img{
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+    }
+    @media(max-width:1400px){
+        width: 145px;
+        height: 59px;
+    }
+    @media(max-width:1200px){
+        width: 120px;
+        height: 59px;
     }
 }
 .searchbar_wrapper{
@@ -66,6 +106,10 @@
         width: fit-content;
         border-radius: 3.214rem;
         color: #fff;
+    }
+    .search_heading{
+        color:$text-black;
+
     }
 }
 .category_list li{
@@ -93,6 +137,17 @@
     .amount{
         color:$text-gray-300;
     }
+    .fav_wrapper{
+        background-color: $bg-white;
+        top:3%;
+        right:3%;
+    }
+    .review_list{
+        list-style: none;
+    }
+    .rating ul{
+        list-style: none;
+    }
 }
 
 // .category_icon {
@@ -115,5 +170,62 @@
         background: transparent !important;
         color: #FFF;
         text-decoration: none;
+    }
+}
+.searchbar_sm_list ul{
+    list-style: disc !important;
+    :first-child{
+        list-style: none;
+    }
+}
+.view_map_pill{
+    background-color: $bg-primary;
+    color:$text-white;
+    border-radius: 2.857rem;
+    bottom: 10%;
+    left: calc(50% - 71.85px);
+    width: fit-content;
+}
+.mb_footer_wrapper{
+    border-top:1px solid $bg-gray-500;
+    background-color: $bg-white;
+    .footer_icon{
+        .icon{
+            display:block;
+        }
+        color: $text-gray-300;
+    }
+    .footer_icon_active{
+        .active_icon{
+            display: block !important;
+        }
+        .icon{
+            display: none;
+        }
+        // color:$text-gray-800;
+        color:$bg-primary;
+    }
+}
+.searchvehicles_wrapper{
+    background-color: $bg-violet-200;
+    height: 100vh;
+}
+.search_vehicles_dropdown{
+    color:$text-gray-800;
+    .dropdown-toggle{
+        box-shadow: none;
+    }
+    .dropdown-toggle::after {
+        display:none;
+    }
+    .dropdown-menu{
+        position: absolute;
+        inset: 0px auto auto 0px;
+        margin: 0px;
+        // transform: translate3d(18px, 68px, 0px);
+        width: 100%;
+        border-radius: 50px;
+        overflow: hidden;
+        transform: translate3d(5px, 74px, 0px) !important;
     }
 }
