@@ -58,6 +58,11 @@
 .fs_22{
     font-size: 1.571rem;
 }
+.fs_lg_22{
+    @media(min-width:991px){
+        font-size: 1.429rem;
+    }
+}
 .fs_23{
     font-size: 1.643rem;
 }

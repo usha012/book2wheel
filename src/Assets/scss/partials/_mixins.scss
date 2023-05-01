@@ -26,3 +26,12 @@
         object-fit: $object_size;
     }
 }
+
+@mixin cstm_pill($p_size:0.4rem 1.8rem,$width:fit-content,$radius:3.214rem, $bg_color:white,$border: 0.5px solid lighten($bg-gray-300, 40%), $color:$text-gray-400){
+    padding: $p_size;
+    width: $width;
+    border-radius: $radius;
+    background-color:$bg_color;
+    border:$border;
+    color:$color;
+}

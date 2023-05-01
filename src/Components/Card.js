@@ -4,6 +4,7 @@ import Van from "../Assets/Images/van.svg";
 import Light from "../Assets/Images/light.svg";
 import LocationIcon from "../Assets/Images/location_icon.svg";
 import Star from "../Assets/Images/star.svg";
+import GrayStar from "../Assets/Images/gray_star.svg";
 import HeartOutline from "../Assets/Images/heart_outline.svg";
 import BlueHeart from "../Assets/Images/blue_heart.svg";
 
@@ -57,25 +58,29 @@ export default function Card() {
 
         <div className="row mb-2">
           <ul className="d-flex align-items-end mb-0 review_list">
-            <li>
+            <li className="pe-3">
               <div className="rating">
-                <ul className="d-flex px-0 list-none">
-                  <li className="me-2">
-                    <img src={Star} />
+                <ul className="d-flex align-items-center px-0 star_list_none">
+                  <li className="me-2 rating_active">
+                    <img src={Star} className="d-none yellow_star" />
+                    <img src={GrayStar} className="gray_star" />
+                  </li>
+                  <li className="me-2 rating_active">
+                    <img src={Star} className="d-none yellow_star" />
+                    <img src={GrayStar} className="gray_star" />
                   </li>
                   <li className="me-2">
-                    <img src={Star} />
+                    <img src={Star} className="d-none yellow_star" />
+                    <img src={GrayStar} className="gray_star" />
                   </li>
-                  <li className="me-2">
-                    <img src={Star} />
-                  </li>
-                  <li className="me-2">
-                    <img src={Star} />
+                  <li className="me-2 ">
+                    <img src={Star} className="d-none yellow_star" />
+                    <img src={GrayStar} className="gray_star" />
                   </li>
                 </ul>
               </div>
             </li>
-            <li>
+            <li className="pe-3">
               <div className="rental">
                 <p className="fs_12 fw_400 mb-0">3 rentals</p>
               </div>
@@ -84,7 +89,7 @@ export default function Card() {
         </div>
 
         <div className="d-flex align-items-center amount justify-content-between">
-          <ul className="d-flex align-items-center px-0">
+          <ul className="d-flex align-items-center list-none px-0">
             <li className="me-3">
               <div>
                 <p className="s mb-0">₱2,500</p>

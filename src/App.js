@@ -8,10 +8,10 @@ import TopHeader from './Components/TopHeader';
 function App() {
   return (
     <>
-    {/* <TopHeader/> */}
-    {/* <CategoryFillters/> */}
-    {/* <Products/> */}
-    <SearchVehicles/>
+    <TopHeader/>
+    <CategoryFillters/>
+    <Products/>
+    {/* <SearchVehicles/> */}
     </>
   );
 }

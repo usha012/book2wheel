@@ -83,7 +83,7 @@ const TopHeader = () => {
                             <p className='mb-0 d-lg-none'>Return Date</p>
 
                         </div>
-                        <div className='col-lg- col-auto text-end pe-0'>
+                        <div className='col-auto text-end pe-0'>
                             <div className='header_search d-flex ms-auto align-items-center'>
                                 <div className='pr-20'>
                                     <img src={Search} className='me-lg-4' />
