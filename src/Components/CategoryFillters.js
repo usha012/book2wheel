@@ -25,8 +25,8 @@ const navText = [`<div class="pr-30-contain pr-30-md-contain pr-30-sm-contain"><
 export const CategoryFillters = () => {
   return (
     <>
-      <div className="row mx-1 mx-md-5 mx-lg-5 mb-4 d-none d-md-flex justify-content-between justify-content-md-center justify-content-lg-between align-items-center">
-        <div className="col-10 col-md-10 col-lg-10 mt-4">
+      <div className="row mx-1 mx-md-5 mx-lg-5 mb-4 d-none d-md-flex justify-content-between justify-content-md-center justify-content-lg-between  justify-content-xl-center align-items-center">
+        <div className="col-10 col-md-10 col-lg-10 col-xl-9 col-xxl-8 mt-4">
           <OwlCarousel
             className="owl-theme category_carousel position-relative px-5 ps-lg-0"
             loop
@@ -88,7 +88,7 @@ export const CategoryFillters = () => {
         </div>
 
        
-        <div className="col-auto col-md-1 col-lg-1">
+        <div className="col-auto col-md-1 col-lg-1 col-xl-1 col-xxl-auto">
           <div className="pill_container--fit-content ms-auto">
             <div className='pr-30 pr-30-md'>
                 <img src={FillterIcon} />
