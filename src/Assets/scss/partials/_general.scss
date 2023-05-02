@@ -4,6 +4,9 @@
 }
 
 // image_sizes
+.pr-15{
+    @include image_wrapper(15px, 15px, cover);
+}
 .pr-15-contain{
     @include image_wrapper(15px, 15px, contain);
 }

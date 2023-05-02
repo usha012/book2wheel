@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DummyProduct from "../Assets/Images/dummy_product.png";
 import Van from "../Assets/Images/van.svg";
 import Light from "../Assets/Images/light.svg";
@@ -9,6 +9,7 @@ import HeartOutline from "../Assets/Images/heart_outline.svg";
 import BlueHeart from "../Assets/Images/blue_heart.svg";
 
 export default function Card() {
+  const [fav, setFav] = useState(false)
   return (
     <div class="card product_card_wrapper">
       <img src={DummyProduct} class="card-img-top" />
@@ -106,13 +107,8 @@ export default function Card() {
           </div>
         </div>
       </div>
-      <div className="fav_wrapper position-absolute rounded-circle p-2 ">
-       
-            <img src={HeartOutline}/>
-            <img src={BlueHeart} className="active d-none"/>
-
-        
-
+      <div className="fav_wrapper position-absolute rounded-circle p-2" onClick={() => setFav(!fav)} >
+        {fav ? <img src={BlueHeart} className="active" /> : <img src={HeartOutline} />}
       </div>
     </div>
   );

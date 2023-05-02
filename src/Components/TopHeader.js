@@ -9,7 +9,7 @@ import Cycle from '../Assets/Images/cycle.svg';
 import LocationSm from '../Assets/Images/location3.svg';
 import Date from '../Assets/Images/date.svg';
 
-const TopHeader = () => {
+const TopHeader = (props) => {
     return (
         <div className='header  py-4 py-md-5 mb-md-4 mb-2'>
             {/* <div className='container d-none d-lg-flex justify-content-center align-items-center m-auto p-0'> */}
@@ -84,7 +84,7 @@ const TopHeader = () => {
 
                         </div>
                         <div className='col-auto text-end pe-0'>
-                            <div className='header_search d-flex ms-auto align-items-center'>
+                            <div className='header_search d-flex ms-auto align-items-center'  onClick={() => props.setSearchToggle(false)}>
                                 <div className='pr-20'>
                                     <img src={Search} className='me-lg-4' />
                                 </div>
@@ -134,7 +134,7 @@ const TopHeader = () => {
                        
                         <div className='col-auto text-end pe-0'>
                             <div className='header_search d-flex ms-auto align-items-center'>
-                                <div className='pr-15-contain'>
+                                <div className='pr-15-contain' onClick={() => props.setSearchToggle(false)}>
                                     <img src={Search} className='me-lg-4' />
                                 </div>
                                 

@@ -20,7 +20,7 @@ const responsive = {
     0:{items:4},
     1000:{items:6}
 }
-const navText = [`<div class="pr-30-contain pr-30-md-contain pr-30-sm-contain"><img class='category_icon d-lg-none' src=${PreviousArrow}/></div>`, `<div class="pr-30-contain pr-30-md-contain pr-30-sm-contain"><img class='category_icon' src=${NextArrow}/></div>`]
+const navText = [`<div class="pr-30-contain pr-30-md-contain pr-30-sm-contain"><img class='category_icon d-lg-none' src=${PreviousArrow}/></div>`, `<div class="pr-30-contain pr-30-md-contain pr-30-sm-contain"><img class='category_icon' src="http://54.254.22.6:3005/static/media/next_arrow.21e07bc2c34556f1acc80efdc1652740.svg"/></div>`]
 
 export const CategoryFillters = () => {
   return (

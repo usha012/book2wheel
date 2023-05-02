@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SearchBlue from '../Assets/Images/search_blue.svg';
 import LocationBlue from '../Assets/Images/loaction_blue.svg';
 import Search from '../Assets/Images/search.svg';
+import Close from '../Assets/Images/close.svg';
 
-export const SearchVehicles = () => {
+export const SearchVehicles = (props) => {
+
+   const [navActive, setNavActive]= useState(1)
 
     return (
         <>
             <div className='searchvehicles_wrapper position-relative py-4 px-1'>
                 <div className='row mb-4 mx-0'>
                     <div className='col-12'>
-                        <div className='pill_gray'>
-                            <p className='mb-0'>Return</p>
+                        <div className='pill_gray d-flex justify-content-between px-3' onClick={() => props.setSearchToggle(true)}>
+                            <div className='pr-15 me-2'>
+                            <img src={Close} className='align-text-bottom '/> 
+                            </div>
+                            <p className='mb-0 fs_16 fw_400'>Return</p>
 
                         </div>
 
@@ -22,16 +28,16 @@ export const SearchVehicles = () => {
                     <div className='col-12'>
                         <ul className="nav nav-tabs header_tab justify-content-center" id="myTab" role="tablist">
                             <li className="nav-item line_height_20" role="presentation">
-                                <button className="nav-link fs_24 fs_24_lg fw_400 mx-3 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#Vehicles" type="button" role="tab" aria-controls="home" aria-selected="true">All Vehicles</button>
+                                <button className={`nav-link  fs_24 fs_24_lg fw_400 mx-3 ${navActive === 1 ? "active" : ""}`} id="home-tab" data-bs-toggle="tab" data-bs-target="#Vehicles" type="button" role="tab" aria-controls="home" aria-selected="true"  onClick={() => setNavActive(1)}>All Vehicles</button>
                             </li>
                             <li className="nav-item line_height_20" role="presentation">
-                                <button className="nav-link fs_24 fs_24_lg fw_400 mx-3" id="profile-tab" data-bs-toggle="tab" data-bs-target="#Car" type="button" role="tab" aria-controls="profile" aria-selected="false">Car</button>
+                                <button className={`nav-link  fs_24 fs_24_lg fw_400 mx-3 ${navActive === 2 ? "active" : ""}`} id="profile-tab" data-bs-toggle="tab" data-bs-target="#Car" type="button" role="tab" aria-controls="profile" aria-selected="false"  onClick={() => setNavActive(2)}>Car</button>
                             </li>
                             <li className="nav-item line_height_20" role="presentation">
-                                <button className="nav-link fs_24 fs_24_lg fw_400 mx-3" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Motorcycle" type="button" role="tab" aria-controls="contact" aria-selected="false">Motorcycle</button>
+                                <button className={`nav-link fs_24 fs_24_lg fw_400 mx-3 ${navActive === 3 ? "active" : ""}`} id="contact-tab" data-bs-toggle="tab" data-bs-target="#Motorcycle" type="button" role="tab" aria-controls="contact" aria-selected="false"  onClick={() => setNavActive(3)}>Motorcycle</button>
                             </li>
                             <li className="nav-item line_height_20" role="presentation">
-                                <button className="nav-link fs_24 fs_24_lg fw_400 mx-3" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Van</button>
+                                <button className={`nav-link  fs_24 fs_24_lg fw_400 mx-3 ${navActive === 4 ? "active" : ""}`} id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"  onClick={() => setNavActive(4)}>Van</button>
                             </li>
                         </ul>
 
