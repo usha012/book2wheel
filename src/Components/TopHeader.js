@@ -15,7 +15,7 @@ const TopHeader = (props) => {
             {/* <div className='container d-none d-lg-flex justify-content-center align-items-center m-auto p-0'> */}
             <div className='row mb-4 d-none d-lg-flex top_header_wrapper justify-content-center align-items-center'>
                 <div className='col-lg-2 col-xl-2 col-xxl-auto'>
-                    <div className='logo_wrapper'>
+                    <div className='logo_wrapper cusor-pointer'>
                         <img alt="" src={HeaderLogo} />
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const TopHeader = (props) => {
                             <div className='pr-20-contain me-3 '>
                                 <img src={User} />
                             </div>
-                            <div className='bars_icon'>
+                            <div className='bars_icon cusor-pointer'>
                                 <img src={Bars} />
                             </div>
                         </div>
@@ -66,25 +66,25 @@ const TopHeader = (props) => {
                     <img src={Cycle} />
 
                 </div>
-                <div className='col-8 col-md-8 col-lg-7 col-xl-7 col-xxl-6'>
+                <div className='col-8 col-md-8 col-lg-9 col-xl-9 col-xxl-7'>
                     <div className='row pill_container align-items-center justify-content-between px-2 py-2'>
-                        <div className='col-lg-3 col-3 text-center fs_20 fs_xl_20 fw_600 border-end-gray-100'>
+                        <div className='col-lg-3 col-3 text-center fs_20 fw_700 border-end-gray-100'>
                             <p className='mb-0 d-none d-lg-block'>Enter Location</p>
                             <p className='mb-0 d-lg-none'>Location</p>
 
                         </div>
-                        <div className='col-lg-3 col-3 text-center fs_20 fs_xl_20 fw_600 border-end-gray-100'>
+                        <div className='col-lg-3 col-3 text-center fs_20 fw_700 border-end-gray-100'>
                             <p className='mb-0 d-none d-lg-block'>Pick-up Date</p>
                             <p className='mb-0 d-lg-none'>Pick-up Date</p>
 
                         </div>
-                        <div className='col-lg-3 col-3 text-center fs_20 fs_xl_20 fw_600'>
+                        <div className='col-lg-3 col-3 text-center fs_20 fw_700'>
                             <p className='mb-0 d-none d-lg-block'>Return Date</p>
                             <p className='mb-0 d-lg-none'>Return Date</p>
 
                         </div>
                         <div className='col-auto text-end pe-0'>
-                            <div className='header_search d-flex ms-auto align-items-center'  onClick={() => props.setSearchToggle(false)}>
+                            <div className='header_search d-flex ms-auto align-items-center cusor-pointer'  onClick={() => props.setSearchToggle(false)}>
                                 <div className='pr-20'>
                                     <img src={Search} className='me-lg-4' />
                                 </div>

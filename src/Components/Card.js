@@ -17,10 +17,10 @@ export default function Card() {
         <div className="d-flex justify-content-between mb-2">
           <div className="d-flex align-items-center product_card_name">
             <div className="border-end-dark-blue-400 pe-3 ps-0">
-              <p className="mb-0 fs_15 fw_600">Yamaha Mio</p>
+              <p className="mb-0 fs_19 fw_600">Yamaha Mio</p>
             </div>
             <div className="pe-3 ps-3">
-              <p className="mb-0 fs_15 fw_500"> 150 CC</p>
+              <p className="mb-0 fs_19 fw_500"> 150 CC</p>
             </div>
           </div>
           <div className="d-flex align-items-center">
@@ -59,7 +59,7 @@ export default function Card() {
 
         <div className="row mb-2">
           <ul className="d-flex align-items-end mb-0 review_list">
-            <li className="pe-3">
+            <li className="pe-4">
               <div className="rating">
                 <ul className="d-flex align-items-center px-0 star_list_none">
                   <li className="me-2 rating_active">
@@ -81,9 +81,9 @@ export default function Card() {
                 </ul>
               </div>
             </li>
-            <li className="pe-3">
+            <li className="pe-4">
               <div className="rental">
-                <p className="fs_12 fw_400 mb-0">3 rentals</p>
+                <p className="fs_15 fw_400 mb-0 line_height_14">3 rentals</p>
               </div>
             </li>
           </ul>
@@ -93,17 +93,17 @@ export default function Card() {
           <ul className="d-flex align-items-center list-none px-0">
             <li className="me-3">
               <div>
-                <p className="s mb-0">₱2,500</p>
+                <p className="s mb-0 fs_15 fs_md_15 fw_400">₱2,500</p>
               </div>
             </li>
             <li className="me-3">
               <div>
-                <p className="mb-0">₱2,500/day</p>
+                <p className="mb-0 fs_15 fs_md_15 "><span className="current_price fw_700">₱2,500</span>/day</p>
               </div>
             </li>
           </ul>
           <div>
-            <p className="fw_bold fs_12">Total: ₱25,000</p>
+            <p className="fw_bold fs_15 fs_md_15 fw_700">Total: ₱25,000</p>
           </div>
         </div>
       </div>

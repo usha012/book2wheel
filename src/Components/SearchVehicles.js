@@ -13,8 +13,8 @@ export const SearchVehicles = (props) => {
             <div className='searchvehicles_wrapper position-relative py-4 px-1'>
                 <div className='row mb-4 mx-0'>
                     <div className='col-12'>
-                        <div className='pill_gray d-flex justify-content-between px-3' onClick={() => props.setSearchToggle(true)}>
-                            <div className='pr-15 me-2'>
+                        <div className='pill_gray d-flex justify-content-between px-3 cusor-pointer' onClick={() => props.setSearchToggle(true)}>
+                            <div className='pr-15 me-2 '>
                             <img src={Close} className='align-text-bottom '/> 
                             </div>
                             <p className='mb-0 fs_16 fw_400'>Return</p>

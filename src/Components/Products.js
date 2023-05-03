@@ -16,18 +16,18 @@ import Card from './Card';
 
 const Products = () => {
   return (
-    <div className='position-relative'>
+    <div className='position-relative py-4'>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <div className='row mx-0 px-4'>
-            <div className='col-md-6 col-lg-4 col-xl-3'><Card /></div>
-            <div className='col-md-6 col-lg-4 col-xl-3'><Card /></div>
-            <div className='col-md-6 col-lg-4 col-xl-3'><Card /></div>
-            <div className='col-md-6 col-lg-4 col-xl-3'><Card /></div>
-            <div className='col-md-6 col-lg-4 col-xl-3'><Card /></div>
-            <div className='col-md-6 col-lg-4 col-xl-3'><Card /></div>
-            <div className='col-md-6 col-lg-4 col-xl-3'><Card /></div>
-            <div className='col-md-6 col-lg-4 col-xl-3'><Card /></div>
+            <div className='col-md-6 col-lg-4 col-xl- px-md-4'><Card /></div>
+            <div className='col-md-6 col-lg-4 col-xl- px-md-4'><Card /></div>
+            <div className='col-md-6 col-lg-4 col-xl- px-md-4'><Card /></div>
+            <div className='col-md-6 col-lg-4 col-xl- px-md-4'><Card /></div>
+            <div className='col-md-6 col-lg-4 col-xl- px-md-4'><Card /></div>
+            <div className='col-md-6 col-lg-4 col-xl- px-md-4'><Card /></div>
+            <div className='col-md-6 col-lg-4 col-xl- px-md-4'><Card /></div>
+            <div className='col-md-6 col-lg-4 col-xl- px-md-4'><Card /></div>
           </div>
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">.gdgsdldgd..</div>

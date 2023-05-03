@@ -30,9 +30,12 @@
   
 }
 .pr-40-md-contain{
-    @media (max-width:769px) {
-        @include image_wrapper(20px, 20px, contain);  
+    @media (max-width:1400px) {
+        @include image_wrapper(30px, 30px, contain);  
     }
+    // @media(max-width:1400px){
+    //     @include image_wrapper(30px, 30px, contain);  
+    // }
 }
 .pr-30{
     @include image_wrapper(30px, 30px, cover)
@@ -128,4 +131,10 @@
 // list style
 .list-none{
     list-style: none;
+}
+
+// cursor
+
+.cusor-pointer{
+    cursor: pointer;
 }

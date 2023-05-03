@@ -22,8 +22,15 @@
 .fs_14{
     font-size: 1rem;
 }
+
 .fs_15{
     font-size: 1.071rem;
+}
+.fs_md_15{
+    @media (min-width:481px) and (max-width:768px){
+        font-size: 1.3rem;
+    }
+   
 }
 .fs_16{
     font-size: 1.143rem;
@@ -54,6 +61,12 @@
 }
 .fs_21{
     font-size: 1.5rem;
+}
+.fs_md_21{
+    @media(max-width:768px){
+        font-size:1.5rem;
+    }
+    
 }
 .fs_22{
     font-size: 1.571rem;
