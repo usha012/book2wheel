@@ -107,8 +107,8 @@ export default function Card() {
           </div>
         </div>
       </div>
-      <div className="fav_wrapper position-absolute rounded-circle p-2" onClick={() => setFav(!fav)} >
-        {fav ? <img src={BlueHeart} className="active" /> : <img src={HeartOutline} />}
+      <div className="fav_wrapper position-absolute rounded-circle p-2 cusor-pointer" onClick={() => setFav(!fav)} >
+        {fav ?<div className="pr-20-contain"><img src={BlueHeart} className="active" /></div>  : <div className="pr-20-contain "><img src={HeartOutline} /></div>}
       </div>
     </div>
   );
